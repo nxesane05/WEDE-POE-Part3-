@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>Enquires page</title>
+    <link rel="stylesheet" href="css page.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+         <a href="About us.html">ABOUT US</a>
+          <a href="Contact us.html">CONTACT US</a>
+          <a href="Enquires.html">ENQUIRES</a>
+           <a href="Products.html">PRODUCTS</a>
+    </nav>
+    <h1>Make an enquiry</h1>
+    <form>
+        <section>
+       <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+        </section>
+
+        <section>
+            <label for="email">Email Adress</label>
+            <input type="text" id="email" name="email" required>
+        </section>    
+
+        <section>
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" required>
+        </section>
+
+
+
+        <label for="enquiry"> Type of enquiry:</label>
+        <section>
+        <select id="enquiry">Type of <enquiry:>
+            <option value="cake">Birthday cake</option>
+            <option value="bread">Bread</option>
+            <option value="catering servives">Catering services</option>
+            <option value="order">General Order</option>
+            <option value="order">Other</option>
+        </select>
+        </section>
+
+        <section><label for="message">Add A Note</label></section>
+        <section><textarea id="message" name="message" rows="5"></textarea></section>
+
+    </form>
+
+    <form id="enquiryForm">
+<input
+type="text"
+id="customerName"
+placeholder="Full Name"
+required>
+<input
+type="email"
+id="customerEmail"
+placeholder="Email Address"
+required>
+<select id="productType">
+<option value="cake">
+Cake
+</option>
+<option value="bread">
+Bread
+</option>
+<option value="muffins">
+Muffins
+</option>
+</select>
+<input
+type="number"
+id="quantity"
+placeholder="Quantity"
+required>
+<button type="submit">
+Submit Enquiry
+</button>
+</form>
+<div id="responseMessage"></div>
+
+</body>
